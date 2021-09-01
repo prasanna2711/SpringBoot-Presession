@@ -1,0 +1,20 @@
+<h2>Product Details</h2> 
+
+<hr/>
+<div *ngFor="let emp of employees">
+  <div>
+    <label><b>Product Name: </b></label> {{emp.productName}}
+  </div>
+  <div>
+    <label><b>Qty: </b></label> {{emp.qty}}
+  </div>
+  <div>
+    <label><b>Cost: </b></label> {{emp.cost}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Employee List</button><br>
+
+
